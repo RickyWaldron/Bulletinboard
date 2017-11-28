@@ -1,0 +1,30 @@
+.addMessageContainer{
+	margin: 0 auto;
+	text-align: center
+}
+
+.inputTitleMessage{
+	height: 20px;
+	width: 40%;
+}
+
+.inputBodyMessage{
+	width: 40%;
+	height: 400px;
+}
+
+.inputSubmitMessage{
+	height: 20px;
+	width: 40%;
+}
+
+a {
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+ul.navBar {
+	list-style: none;
+	text-align: center;
+}
+

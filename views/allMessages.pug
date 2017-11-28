@@ -1,0 +1,9 @@
+//- this page shows all the messages
+
+html
+	head
+		include navBar.pug	
+		title all messages #{title} 
+	body.allMessages
+		- for (var i = 0; i<data[0].rows.length; i++)
+			li message id: #{data[0].rows[i].id} Title: #{data[0].rows[i].title} Body: #{data[0].rows[i].body} UserID: #{data[0].rows[i].userid} 
