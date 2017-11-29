@@ -2,8 +2,23 @@
 
 html
 	head
-		include navBar.pug	
-		title all messages #{title} 
-	body.allMessages
-		- for (var i = 0; i<data[0].rows.length; i++)
-			li message id: #{data[0].rows[i].id} Title: #{data[0].rows[i].title} Body: #{data[0].rows[i].body} UserID: #{data[0].rows[i].userid} 
+		include navBar.pug
+		title all messages #{title}
+	body
+		table(class="table1")
+			tr
+				th Message id
+				th Title
+				th Body
+				th User id
+			- for (var i=0; i < data[0].rows.length; i++)
+				tr
+					td #{data[0].rows[i].id}
+					td #{data[0].rows[i].title}
+					td #{data[0].rows[i].body}
+					td #{data[0].rows[i].userid}
+	
+	
+	style
+		include addMessage.css
+		include messagePage.css		 
