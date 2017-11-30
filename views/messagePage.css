@@ -4,24 +4,22 @@ body {
     height: 100%;
 }
 
-/*ul.listContainer {
-    list-style-type: none;
-    text-decoration-style: none;
-    background-color: lightGreen;
-    width: 100%;
+.table1 {
+    margin: 0 auto;
+    border: solid 1px;
+    text-align: left;
 }
 
-li.listItemMessage{
-    text-align: center;
-    list-style-type: none;
-    text-decoration-style: none;
+th {
     border: solid 0.5px;
-    padding-top: 1px;
-    margin-right: 20px;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-*/
-td{
-    font-size: 30px;
-    color: black;
-    float: right;
+
+td {
+    border: solid 0.5px;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

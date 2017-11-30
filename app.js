@@ -19,9 +19,14 @@ const client = new Client({
     port: 5432,
 })
 
+
 client.connect()
 app.use(bodyParser.urlencoded())
 app.set('view engine', 'pug')
+
+app.get('/',(req, res) => {
+    res.render('index')
+})
 
 app.get('/addMessages', (req, res) => {
     res.render('addMessages')
